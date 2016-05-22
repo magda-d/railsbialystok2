@@ -1,0 +1,25 @@
+	<h1>Strona o super kotach!!!!</h1>
+
+ 	<div>
+ 	 		<h2>Grumpy cat</h2>
+ 	 		<p>21.05.2016</p>
+ 	 		<p>Najbardziej <strong>oburzony</strong> kot świata</p>
+ 	</div>
+
+  <div>
+ 	 		<h2>Fluffy cat</h2>
+ 	 		<p>22.05.2016</p>
+ 	 		<p>Najbardziej <strong>puszysty</strong> kot świata</p>
+ 	</div>
+
+ 	<div>
+ 	 		<h2>Happy cat</h2>
+ 	 		<p>23.05.2016</p>
+ 	 		<p>Najbardziej <strong>szczęśliwy</strong> kot świata</p>
+ 	</div>
+
+ 	<ul>
+    <% @websites.each do |website| %>
+      <li><a href="<%= website[:url] %>"> <%= website[:name] %></a></li>
+    <% end %>
+  </ul>

@@ -1,0 +1,16 @@
+<h1>Strona o super kotach!!</h1>
+
+<% @entries.each do |entry| %>
+  <div>
+    <h2><%= entry.title %></h2>
+    <%= link_to "Pokaż", entry_path(entry) %>
+    <%= link_to "Edycja", edit_entry_path(entry) %>
+    <%= link_to "Usuń", entry, method: :delete, data: { confirm: 'Na pewno usunąć?' } %>
+  </div>
+<% end %>
+
+<%= link_to "Dodaj nowego koteczka", new_entry_path %>
+
+<div>
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTB_pYYERulZ0lsyLdg_ISd6fspN4E5TRpOMGdyVCtJQQzr2aqM">
+</div>
